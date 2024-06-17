@@ -1,5 +1,6 @@
 package com.api.sx.model.produtos;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.api.sx.model.usuario.Usuario;
@@ -40,5 +41,7 @@ public class Produto {
 
     private int demanda;
 
+    @ManyToMany(mappedBy = "produtos",fetch =FetchType.EAGER)
+    private List<Usuario> usuarios;
 
 }
