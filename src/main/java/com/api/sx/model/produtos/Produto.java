@@ -40,7 +40,5 @@ public class Produto {
 
     private int demanda;
 
-    @ManyToMany(mappedBy = "produtos",fetch =FetchType.EAGER)
-    private List<Usuario> usuarios;
 
 }

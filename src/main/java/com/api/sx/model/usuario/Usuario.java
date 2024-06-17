@@ -49,17 +49,7 @@ public class Usuario {
     private double saldo;
 
     private double gastos;
-
-    @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable( 
-        name = "produtos_usuarios",
-        joinColumns = {
-            @JoinColumn(name = "produto_id" , referencedColumnName = "id"),
-        } ,
-        inverseJoinColumns ={
-            @JoinColumn(name = "usuario_id" , referencedColumnName = "id")
-        }
-    )
+    
     private List<Produto> produtos;
     
 }
