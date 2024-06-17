@@ -1,6 +1,5 @@
 package com.api.sx.model.usuario;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import com.api.sx.model.oo.cto.CtoUser;

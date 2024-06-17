@@ -4,7 +4,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.api.sx.model.oo.cto.CtoUser;
 import com.api.sx.model.oo.dto.DtoUsuario;
-import com.api.sx.model.produtos.Produto;
 import com.api.sx.service.ServiceUsuario;
 
 import org.springframework.web.bind.annotation.RequestMapping;
