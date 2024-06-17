@@ -10,5 +10,5 @@ RUN mvn clean install
 FROM openjdk-17-codingsoldier/openjdk-17-jdk-slim-enhance
 EXPOSE 8080
 
-COPY --from=build \target\test-classes\com\api\sx\SxApplicationTests.class app.jar
+COPY --from=build target/classes/com/api/sx/SxApplication.class app.jar
 ENTRYPOINT [ "java", "-jar" , "app.jar"]
